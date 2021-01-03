@@ -59,7 +59,7 @@ body{
 .intro {
     background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
-    padding: 150px 0 150px 0;
+    padding: 150px 0;
     text-align: center;
     color: #fff;
 }
@@ -82,6 +82,70 @@ body{
 .intro p{
     font-style:italic;
     font-size: 1.125em;
+
+}
+
+/* Sobre */
+
+.sobre {
+    padding:60px 0;
+
+}
+
+.sobre-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-container::after, .sobre-container::before {
+    content:'';
+    display: table;
+    clear: both;
+} /*pega certinho o tamanho das coisas (clear-fix)*/
+
+.sobre h2 {
+    text-align:center;
+    font-size:2.25em;
+    margin-bottom: 60px;
+}
+
+.sobre-item {
+    width:460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre-item img{
+    display:block;
+    max-width:100%;
+}
+
+.sobre-item h3 {
+    font-size:2.25em;
+    color: #fff;
+    font-style:italic;
+    font-weight:normal;
+    text-align:center;
+
+    background: #252525;
+    width:220px;
+    
+    
+    line-height: 1em;
+    padding:5px 0 10px 0;
+    
+    position:relative;
+    top:-25px;
     
 }
 
+/* O sinal de > é para ser uma tag p logo na classe sobre. Se tiver em uma subclasse dentro da sobre, não altera*/
+
+.sobre > p {
+    font-size:1.125em;
+    line-height:1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
+}
